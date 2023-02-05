@@ -13,7 +13,7 @@ root.render(
     <BrowserRouter>
       <div>
         <Link to='/tab'>Tab</Link>
-        <Link to='/tab'>Tabccccc</Link>
+        <Link to='/tab'>vue</Link>
       </div>
       <RouteConfigs></RouteConfigs>
     </BrowserRouter>
