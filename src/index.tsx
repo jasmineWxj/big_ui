@@ -16,6 +16,7 @@ root.render(
         <Link to='/tab'>vue</Link>
         <Link to='/tab'>react</Link>
         <Link to='/tab'>abc</Link>
+        <Link to='/tab'>秦晓莉</Link>
       </div>
       <RouteConfigs></RouteConfigs>
     </BrowserRouter>
