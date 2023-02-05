@@ -15,6 +15,7 @@ root.render(
         <Link to='/tab'>Tab</Link>
         <Link to='/tab'>vue</Link>
         <Link to='/tab'>react</Link>
+        <Link to='/tab'>abc</Link>
       </div>
       <RouteConfigs></RouteConfigs>
     </BrowserRouter>
