@@ -15,6 +15,7 @@ root.render(
       <div className={classnames('header_bar')}>
         <Link to='/'>Tab</Link>
         <Link to='/switch'>switch</Link>
+        <Link to='/timeline'>timeline</Link>
       </div>
       <RouteConfigs></RouteConfigs>
     </BrowserRouter>
