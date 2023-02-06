@@ -1,0 +1,41 @@
+.switch{
+    width: 50px;
+    .box{
+        width: 50px;
+        height: 20px;
+        background-color: rgb(170, 170, 170);
+        border-radius: 100px;
+        cursor: pointer;
+        padding: 2px;
+        main{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: rgb(255, 255, 255);
+            transition: 0.5s;
+            position: relative;
+            div{
+                position: absolute;
+                font-size: 8px;
+                width: 30px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                color: white;
+                &:nth-child(1){
+                    left: 110%;
+                }
+                 &:nth-child(2){
+                    right: 85%;
+                }
+            }
+            .close,.open{
+                display: none;
+            }
+        }
+    }
+    .bilue{
+        background: rgb(25, 25, 250);
+    }
+
+}

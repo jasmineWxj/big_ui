@@ -5,6 +5,7 @@ interface  Tabs{
     children:any
     aligh:'left' | 'center'
     style: 'btn' | 'line'
+    tabChange?:(e:string,i:number) => void,
 }
 /**
  * 默认tab 左对齐
@@ -13,11 +14,11 @@ interface  Tabs{
 function Tab(props:Tabs) {
     const [num,setNum] = useState(0)
     const [from,setFrom] = useState(0)
-    const {children, aligh = 'left',style} = props;
-    console.log(aligh);
+    const {children, aligh = 'left',style, tabChange} = props;
     const tabbtn = (e:any,i:number)=>{
         setFrom(e.target.offsetLeft + (( e.target.offsetWidth - 30)/2))
         setNum(i)
+        tabChange && tabChange(e.target.innerText,i)
     }
     useEffect(()=>{
         children.forEach((element:any,index:number) => {

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import RouteConfigs from './router';
 import { BrowserRouter, useNavigate, Link} from 'react-router-dom';
+import classnames from 'classnames';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,13 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <div>
     <BrowserRouter>
-      <div>
-        <Link to='/tab'>Tab</Link>
-        <Link to='/tab'>vue</Link>
-        <Link to='/tab'>react</Link>
-        <Link to='/tab'>abc</Link>
-        <Link to='/tab'>王晓晶</Link>
-        <Link to='/tab'>秦晓莉</Link>
+      <div className={classnames('header_bar')}>
+        <Link to='/'>Tab</Link>
+        <Link to='/switch'>switch</Link>
       </div>
       <RouteConfigs></RouteConfigs>
     </BrowserRouter>
