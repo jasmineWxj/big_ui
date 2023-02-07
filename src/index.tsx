@@ -17,7 +17,9 @@ root.render(
         <Link to='/switch'>switch</Link>
         <Link to='/timeline'>timeline</Link>
       </div>
-      <RouteConfigs></RouteConfigs>
+      <div className={classnames('contain')}>
+        <RouteConfigs></RouteConfigs>
+      </div>
     </BrowserRouter>
   </div>
 
