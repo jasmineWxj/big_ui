@@ -4,6 +4,7 @@ import Tabitem from './Tabitem'
 import Demo from './Demo'
 import Switch from './Switch'
 import Timeline from './Timeline'
+import TimeItem from './Timeline/Timelineitem'
 export {
     Button,
     Demo,
@@ -11,4 +12,5 @@ export {
     Tabitem,
     Switch,
     Timeline,
+    TimeItem
 }
