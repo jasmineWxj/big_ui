@@ -4,12 +4,11 @@ import classnames from 'classnames';
 
 interface  Timeline{
     children:any
+    time?:string
 }
 
 function TimeItem(props:Timeline) {
-    const {children} = props
-    console.log(props);
-    
+    const {children,time} = props
   return (
     <div className={classnames({
         time_line_common:true
@@ -23,9 +22,8 @@ function TimeItem(props:Timeline) {
             line_com:true
         })}></div>
         <main className={classnames('')}>
-            <div></div>
-            <div></div>
-            {children}
+            <span>{time}</span>
+            <div>{children}</div>
         </main>
     </div>
   );
