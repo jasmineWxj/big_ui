@@ -5,7 +5,6 @@ import classnames from 'classnames';
 function Timemain(){
     const [type,setType] = useState('btn') as any
     const changes = (flag:boolean) =>{
-        console.log(flag);
         setType(flag ? 'center' : 'left')
     }
   return  <div style={{'width':'300px'}}>

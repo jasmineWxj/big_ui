@@ -16,6 +16,7 @@ root.render(
         <Link to='/'>Tab</Link>
         <Link to='/switch'>switch</Link>
         <Link to='/timeline'>timeline</Link>
+        <Link to='/popover'>popover</Link>
       </div>
       <div className={classnames('contain')}>
         <RouteConfigs></RouteConfigs>

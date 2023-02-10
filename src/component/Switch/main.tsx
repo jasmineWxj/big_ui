@@ -4,7 +4,6 @@ import { Switch} from '../index';
 function Switchmain(){
     const [data,setData] = useState(false)
     const change = (flag:boolean) => {
-        console.log(flag);
         setData(flag)
     }
     return  <div >

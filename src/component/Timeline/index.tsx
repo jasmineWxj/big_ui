@@ -8,8 +8,6 @@ interface  Timeline{
 
 function Timeline(props:Timeline) {
     const {children,line_left} = props
-    console.log(children);
-    
   return (
     <div className='Timeline'>
         <ul className={classnames({
