@@ -1,14 +1,32 @@
 .Timeline{
+    li>div{
+       padding : 5px 0;
+    }
     li:last-child{
-        .line{
-            display: none;
+         .line_com{
+            top: -50%;
         }
         .spot{
             top: 55%;
         }
     }
+    li:first-child{
+        .line_com{
+            top: 50%;
+        }
+    }
+    .line_com{
+        top: 0;
+    }
     .time_line_common{
         position: relative;
+        .noborder{
+            border: none !important;
+            // background: url(https://cdn.sm.cn/static/22/11/08/ee3d7651a7e3bab6c8d42456535450b4.png) !important;
+            background-size: cover !important;
+            width: 10px !important;
+            height: 10px !important;
+        }
     }
     .spot_com{
         position: absolute;
@@ -40,7 +58,6 @@
         .line{
             left: 50%;
             transform: translateX(-50%);
-            top: 50%;
         }
         main{
             box-sizing: border-box;
@@ -65,7 +82,12 @@
         }
     }
     .line_left{
-        
+        main{
+            span{
+                display: block;
+                font-size: 12px;
+            }
+        }
         .spot{
             position: absolute;
             transform: translate(-50%,-50%);
@@ -82,7 +104,6 @@
             height: 100%;
             width: 1px;
             background: red;
-            top: 50%;
             transform: translateX(-50%);
         }
     }
