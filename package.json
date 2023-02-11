@@ -37,7 +37,7 @@
       "react-app",
       "react-app/jest"
     ],
-     "rules": {
+    "rules": {
       "no-undef": "off",
       "no-restricted-globals": "off",
       "no-unused-vars": "off"
