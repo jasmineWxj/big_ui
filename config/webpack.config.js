@@ -51,12 +51,7 @@ const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
 const emitErrorsAsWarnings = process.env.ESLINT_NO_DEV_ERRORS === 'true';
 const disableESLintPlugin = process.env.DISABLE_ESLINT_PLUGIN === 'true';
 var publicPath = process.env.npm_config_evnmode;
-if (publicPath){
-  console.log(11);
-}else{
-  console.log(22);
-}
-
+console.log(!publicPath);
 
 const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
@@ -729,7 +724,7 @@ module.exports = function (webpackEnv) {
             infrastructure: 'silent',
           },
         }),
-      publicPath && !disableESLintPlugin &&
+      !publicPath && !disableESLintPlugin &&
         new ESLintPlugin({
           // Plugin options
           extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
